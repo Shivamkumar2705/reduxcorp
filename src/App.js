@@ -1,10 +1,16 @@
-import "./App.css";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
-    <main class="flex justify-center gap-4 flex-col min-h-screen ">
-      <h1 class="text-3xl font-bold text-center, text-left">my app is yyh  building apppp</h1>
-    </main>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-grow flex justify-center gap-4 flex-col p-4">
+        <h1 className="text-3xl font-bold text-center">
+          Welcome to Our Intern Project Portfolio
+        </h1>
+      </div>
+    </div>
   );
 }
 
