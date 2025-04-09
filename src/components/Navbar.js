@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="bg-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-blue-600">
-          InternHub
+          Add_Logo
         </Link>
         <ul className="flex gap-6 text-gray-700 font-medium">
           <li>
