@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Speciality() {
   return (
-<section>
+<section className="mt-16 md:mt-24 lg:mt-32">
       
       {/* Glowing Background Effects */}
       <div className="absolute top-[-60px] left-[-80px] w-96 h-96 bg-purple-700 opacity-20 rounded-full blur-3xl animate-pulse"></div>
