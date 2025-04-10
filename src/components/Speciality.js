@@ -25,27 +25,28 @@ function Speciality() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialityData.map((card, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-gradient-to-br from-[#1a1a2e] to-[#0f0f0f] p-6 rounded-xl border border-gray-700 shadow-xl hover:shadow-2xl transition-shadow duration-300"
-            >
-              <div className="flex justify-center mb-4">
-                <img
-                  src={card.image}
-                  alt={card.alt}
-                  className="h-20 w-20 object-contain transform group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors duration-300">
-                {card.title}
-              </h3>
-              <p className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
-                {card.description}
-              </p>
-            </motion.div>
+            key={index}
+            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
+            whileHover={{ scale: 1.05, rotate: 1 }}
+            className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-xl hover:shadow-purple-700/30 transition-all duration-500 hover:bg-white/10"
+          >
+            <div className="flex justify-center mb-4">
+              <img
+                src={card.image}
+                alt={card.alt}
+                className="h-20 w-20 object-contain transform group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors duration-300">
+              {card.title}
+            </h3>
+            <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
+              {card.description}
+            </p>
+          </motion.div>          
           ))}
         </div>
       </div>
