@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Speciality() {
   return (
-<section className="relative mt-0 bg-gradient-to-b from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] py-20 px-4 sm:px-8 overflow-hidden">
+<section>
       
       {/* Glowing Background Effects */}
       <div className="absolute top-[-60px] left-[-80px] w-96 h-96 bg-purple-700 opacity-20 rounded-full blur-3xl animate-pulse"></div>

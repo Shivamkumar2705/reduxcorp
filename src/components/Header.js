@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 function Header() {
   return (
-<section className="relative overflow-hidden text-center py-32 px-6 bg-gradient-to-br from-white via-gray-50 to-purple-100 dark:from-[#0f0f0f] dark:via-[#1a1a2e] dark:to-[#0f0f0f] transition-all duration-500 pb-24">
+<section>
 
       {/* Background Glow Elements */}
       <div className="absolute top-[-100px] left-[-80px] w-96 h-96 bg-purple-800 opacity-30 rounded-full blur-3xl animate-pulse dark:bg-purple-900"></div>
