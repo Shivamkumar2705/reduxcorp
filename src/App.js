@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="border-b border-gray-200">
+      <div className="border-b border-gray-200 ">
         <Navbar />
       </div>
       <main>
