@@ -3,7 +3,7 @@ import approachData from "../data/approachData";
 
 const Approach = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-6 py-16">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-6 py-16 ">
       {approachData.map((item, index) => (
         <div
           key={index}

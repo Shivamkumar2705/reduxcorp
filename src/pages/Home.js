@@ -18,7 +18,7 @@ function Home() {
       <Midicomponent />
       {/* <Sticker />  */}
       <Speciality />
-      <h2 className="text-3xl font-bold text-gray-800 mb-8">Our Approach</h2>
+      <h2 className=" mt-20 md:mt-32 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-500 to-orange-400 mb-8">Our Approach</h2>
       <Approach />
       <Border />
     </div>

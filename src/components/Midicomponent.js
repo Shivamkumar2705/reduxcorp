@@ -34,21 +34,23 @@ function Midicomponent() {
    
         <div className="mt-8">
           <Swiper
-            modules={[Autoplay, Pagination]}
-            spaceBetween={30}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{ clickable: true }}
-            loop={true}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
+              modules={[Autoplay, Pagination]}
+              spaceBetween={30}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, // 👈 This is what you're missing!
+              }}
+              pagination={{ clickable: true }}
+              loop={true}
+              breakpoints={{
+                320: { slidesPerView: 1 },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
           >
+
             {testimonialData.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="h-full bg-gradient-to-br from-[#1a1a2e] to-[#0f0f0f] p-6 rounded-xl shadow-xl border border-gray-800 hover:border-purple-500 transition-all duration-300">
