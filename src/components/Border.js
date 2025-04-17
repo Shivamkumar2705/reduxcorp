@@ -3,8 +3,8 @@ import React from 'react';
 function Border() {
   return (
   
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+      <div className="container mx-auto text-center mt-32">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">
           Ready to take your <span className="text-purple-400">digital presence</span> to
           the next level?
         </h2>

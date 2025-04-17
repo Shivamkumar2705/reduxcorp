@@ -12,7 +12,7 @@ function Home() {
       <Header />
       <InfoSection />
      
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 mb-12">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 mb-12 mt-32">
         Praise from Happy Customers
       </h2>
       <Midicomponent />
