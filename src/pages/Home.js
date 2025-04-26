@@ -3,7 +3,7 @@ import Speciality from "../components/Speciality";
 import Midicomponent from "../components/Midicomponent";
 import Approach from "../components/Approach";
 import Border from "../components/Border";
-// import Sticker from "../components/Sticker";
+import Stickers from "../components/Stickers";
 import InfoSection from "../components/InfoSection" 
 
 function Home() {
@@ -17,6 +17,7 @@ function Home() {
       </h2>
       <Midicomponent />
       {/* <Sticker />  */}
+      <Stickers/>
       <Speciality />
       <h2 className=" mt-20 md:mt-32 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-500 to-orange-400 mb-8">Our Approach</h2>
       <Approach />
