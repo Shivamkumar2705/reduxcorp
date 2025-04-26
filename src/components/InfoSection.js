@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import b5Image from '../assets/b5.svg';
 
 // --- Icon Components (Using Heroicons-style SVGs for consistency) ---
 
@@ -68,6 +69,14 @@ function InfoSection() {
       {/* Grid layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 md:auto-rows-min gap-6">
         
+
+        {/* New Div - Tagline on the left */}
+        <div className="md:col-start-2 md:row-start-1 flex items-center justify-center bg-transparent mr-96">
+          <p className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap">
+            " Built for Today. Ready for Tomorrow."
+          </p>
+        </div>
+
         {/* 1. Time Zone Communication */}
         <div className={`${cardBaseClasses} ${cardHoverClasses} md:col-start-3 md:row-start-1 bg-gray-900 flex flex-col justify-between`}>
           <p className="text-lg font-semibold mb-4">
@@ -117,7 +126,7 @@ function InfoSection() {
               className="w-12 h-12 rounded-full border-2 border-purple-500 group-hover:border-purple-400 transition-colors duration-300" 
             />
             <div>
-              <p className="font-medium text-purple-100">John Doe</p>
+              <p className="font-medium text-purple-100">Yash</p>
               <p className="text-sm text-gray-400">Co-Founder</p>
             </div>
           </div>
@@ -137,24 +146,31 @@ function InfoSection() {
           </button>
         </div>
 
-        {/* 6. Inside Scoop */}
-        <div className={`${cardBaseClasses} ${cardHoverClasses} md:col-start-2 md:col-span-2 md:row-start-3 md:row-span-2 bg-gray-900 flex flex-col justify-center`}>
-          <div className="flex items-center mb-2">
-              <CodeBracketIcon />
-              <h3 className="text-sm font-medium text-gray-400">The Inside Scoop</h3>
-          </div>
-          <p className="text-lg font-semibold ml-9"> {/* Indent content slightly */}
-            Currently developing Accommodation Management Software.
-          </p>
-          {/* Optional subtle graphic element */}
-           <div className="mt-4 ml-9 text-gray-600 group-hover:text-gray-500 transition-colors duration-300">
-             {/* Placeholder for a subtle graphic or more details */}
-             <span className="block h-1 w-1/3 bg-teal-500/20 rounded-full"></span>
-           </div>
+      {/* 6. Inside Scoop */}
+      <div className={`${cardBaseClasses} ${cardHoverClasses} md:col-start-2 md:col-span-2 md:row-start-3 md:row-span-2 bg-gray-900 flex flex-col justify-center relative overflow-hidden`}>
+        <div className="flex items-center mb-2">
+            <CodeBracketIcon />
+            <h3 className="text-sm font-medium text-gray-400">The Inside Scoop</h3>
         </div>
+        <p className="text-2xl font-bold -ml-80 py-8"> 
+          Currently developing Accommodation <br/>
+          Management Software.
+        </p>
+        {/* Optional subtle graphic element */}
+        <div className="mt-4 ml-9 text-gray-600 group-hover:text-gray-500 transition-colors duration-300">
+          <span className="block h-1 w-1/3 bg-teal-500/20 rounded-full"></span>
+        </div>
+
+        {/* Image at bottom right */}
+        <img 
+          src={b5Image}
+          alt="Decorative" 
+          className="absolute bottom-2 right-2 w-96 opacity-40 pointer-events-none select-none"
+        />
+      </div>    
       </div>
-    </section>
-  );
-}
+          </section>
+        );
+      }
 
 export default InfoSection;
