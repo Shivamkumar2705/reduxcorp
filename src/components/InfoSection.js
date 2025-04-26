@@ -68,6 +68,14 @@ function InfoSection() {
       {/* Grid layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 md:auto-rows-min gap-6">
         
+
+        {/* New Div - Tagline on the left */}
+        <div className="md:col-start-2 md:row-start-1 flex items-center justify-center bg-transparent mr-96">
+          <p className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap">
+            " Built for Today. Ready for Tomorrow."
+          </p>
+        </div>
+
         {/* 1. Time Zone Communication */}
         <div className={`${cardBaseClasses} ${cardHoverClasses} md:col-start-3 md:row-start-1 bg-gray-900 flex flex-col justify-between`}>
           <p className="text-lg font-semibold mb-4">
